@@ -1,0 +1,39 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "tests": {
+    "environmentsAllowingSeedData": [
+      "test"
+    ]
+  },
+  "authentication": {
+    "secret": "989d3c6cbf625dce7be5d050d3053a6192a1fe5edccc4d895ae12a11e09658c5d2b165b36577f215588f71373bd73812f492bf7f721d30c059997474c17258dfdc19172925b38b5964b7613046f3d351cc9e078caa1b3370ea45e4cc3a89debad92f0351c725b19183831b33adc105df7cd5860b7b047155e4d08f476007c0afb95e83181dab52e4d618c576b352a6ab0a6f4d7fef5ef5f7f9fe09b5194a7c6e8979e8a629617f7938ffbdd426a20698fc35bd65d621721614b246342f717590a232724ac01322f1c60a702fe0608f0a4010682bd35505d9bb18f98d500a2a3c819a2cecd6d51888babbcc58b13d7e24edab40f2f1bae8f324c99c2d4aad2ab8",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "mysql": "mysql://root:test12345@localhost:3306/rescueouranimals"
+}
