@@ -10,23 +10,10 @@ const mongoose = require('mongoose');
 let moduleExports = merge({},
   // !<DEFAULT> code: model
   {
-    email: {
-      type: String,
-      required: true
-    },
-    firstName: {
-      type: String,
-      required: true
-    },
-    lastName: {
-      type: String,
-      required: true
-    },
-    password: String,
-    roleId: {
-      type: mongoose.Schema.Types.ObjectId,
-      required: true
-    }
+    email: String,
+    firstName: String,
+    lastName: String,
+    password: String
   },
   // !end
   // !code: moduleExports // !end

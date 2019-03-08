@@ -1,16 +1,18 @@
 
 /* eslint quotes: 0 */
-// Defines Sequelize model for service `teams`. (Can be re-generated.)
+// Defines Mongoose model for service `animals`. (Can be re-generated.)
 const merge = require('lodash.merge');
-const Sequelize = require('sequelize');
 // eslint-disable-next-line no-unused-vars
-const DataTypes = Sequelize.DataTypes;
+const mongoose = require('mongoose');
 // !code: imports // !end
 // !code: init // !end
 
 let moduleExports = merge({},
-  // !<DEFAULT> code: sequelize_model
-  {},
+  // !<DEFAULT> code: model
+  {
+    name: String,
+    type: String
+  },
   // !end
   // !code: moduleExports // !end
 );

@@ -1,13 +1,13 @@
 
-// Define the Feathers schema for service `teams`. (Can be re-generated.)
+// Define the Feathers schema for service `animals`. (Can be re-generated.)
 // !code: imports // !end
 // !code: init // !end
 
 // Define the model using JSON-schema
 let schema = {
   // !<DEFAULT> code: schema_header
-  title: 'Teams',
-  description: 'Teams database.',
+  title: 'Animals',
+  description: 'Animals database.',
   // !end
   // !code: schema_definitions // !end
 
@@ -22,7 +22,11 @@ let schema = {
 
   // Fields in the model.
   properties: {
-    // !code: schema_properties // !end
+    // !code: schema_properties
+    id: { type: 'ID' },
+    name: {},
+    type: {}
+    // !end
   },
   // !code: schema_more // !end
 };
@@ -32,12 +36,12 @@ let extensions = {
   // GraphQL generation.
   graphql: {
     // !code: graphql_header
-    name: 'Team',
+    name: 'Animal',
     service: {
       sort: { id: 1 },
     },
     // sql: {
-    //   sqlTable: 'Teams',
+    //   sqlTable: 'Animals',
     //   uniqueKey: 'id',
     //   sqlColumn: {
     //     __authorId__: '__author_id__',

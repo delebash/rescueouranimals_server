@@ -1,15 +1,27 @@
 
 /* eslint quotes: 0 */
-// Defines Mongoose model for service `roles`. (Can be re-generated.)
+// Defines the MongoDB $jsonSchema for service `animals`. (Can be re-generated.)
 const merge = require('lodash.merge');
-// eslint-disable-next-line no-unused-vars
-const mongoose = require('mongoose');
 // !code: imports // !end
 // !code: init // !end
 
 let moduleExports = merge({},
   // !<DEFAULT> code: model
-  {},
+  {
+    bsonType: "object",
+    additionalProperties: false,
+    properties: {
+      _id: {
+        bsonType: "objectId"
+      },
+      name: {
+        bsonType: "string"
+      },
+      type: {
+        bsonType: "string"
+      }
+    }
+  },
   // !end
   // !code: moduleExports // !end
 );

@@ -25,17 +25,8 @@ let moduleExports = merge({},
       },
       password: {
         bsonType: "string"
-      },
-      roleId: {
-        bsonType: "objectId"
       }
-    },
-    required: [
-      "email",
-      "firstName",
-      "lastName",
-      "roleId"
-    ]
+    }
   },
   // !end
   // !code: moduleExports // !end

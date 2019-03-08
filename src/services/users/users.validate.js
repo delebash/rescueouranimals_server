@@ -17,12 +17,7 @@ let base = merge({},
   {
     title: "Users",
     description: "Users database.",
-    required: [
-      "email",
-      "firstName",
-      "lastName",
-      "roleId"
-    ],
+    required: [],
     uniqueItemProperties: [],
     properties: {
       id: {
@@ -39,9 +34,6 @@ let base = merge({},
       },
       password: {
         type: "string"
-      },
-      roleId: {
-        type: ID
       }
     }
   },

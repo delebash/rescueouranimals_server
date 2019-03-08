@@ -1,6 +1,6 @@
 
 /* eslint quotes: 0 */
-// Defines Sequelize model for service `roles`. (Can be re-generated.)
+// Defines Sequelize model for service `animals`. (Can be re-generated.)
 const merge = require('lodash.merge');
 const Sequelize = require('sequelize');
 // eslint-disable-next-line no-unused-vars
@@ -10,7 +10,19 @@ const DataTypes = Sequelize.DataTypes;
 
 let moduleExports = merge({},
   // !<DEFAULT> code: sequelize_model
-  {},
+  {
+    id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
+    },
+    name: {
+      type: DataTypes.TEXT
+    },
+    type: {
+      type: DataTypes.TEXT
+    }
+  },
   // !end
   // !code: moduleExports // !end
 );

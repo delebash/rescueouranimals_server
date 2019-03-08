@@ -1,8 +1,8 @@
 
-// Initializes the `teams` service on path `/teams`. (Can be re-generated.)
+// Initializes the `animals` service on path `/animals`. (Can be re-generated.)
 const createService = require('feathers-sequelize');
-const createModel = require('../../models/teams.model');
-const hooks = require('./teams.hooks');
+const createModel = require('../../models/animals.model');
+const hooks = require('./animals.hooks');
 // !code: imports // !end
 // !code: init // !end
 
@@ -20,11 +20,11 @@ let moduleExports = function (app) {
 
   // Initialize our service with any options it requires
   // !<DEFAULT> code: extend
-  app.use('/teams', createService(options));
+  app.use('/animals', createService(options));
   // !end
 
   // Get our initialized service so that we can register hooks
-  const service = app.service('teams');
+  const service = app.service('animals');
 
   service.hooks(hooks);
   // !code: func_return // !end

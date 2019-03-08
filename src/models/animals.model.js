@@ -1,11 +1,11 @@
 
-// teams-model.js - A Sequelize model. (Can be re-generated.)
+// animals-model.js - A Sequelize model. (Can be re-generated.)
 //
 // See http://docs.sequelizejs.com/en/latest/docs/models-definition/
 // for more of what you can do here.
 const merge = require('lodash.merge');
 // !<DEFAULT> code: sequelize_schema
-const sequelizeSchema = require('../../services/test/teams/teams.sequelize');
+const sequelizeSchema = require('../services/animals/animals.sequelize');
 // !end
 // !code: sequelize_imports // !end
 // !code: sequelize_init // !end
@@ -14,7 +14,7 @@ let moduleExports = function (app) {
   let sequelizeClient = app.get('sequelizeClient');
   // !code: sequelize_func_init // !end
 
-  const teams = sequelizeClient.define('teams',
+  const animals = sequelizeClient.define('animals',
     // !<DEFAULT> code: sequelize_model
     sequelizeSchema,
     // !end
@@ -33,7 +33,7 @@ let moduleExports = function (app) {
   );
 
   // eslint-disable-next-line no-unused-vars
-  teams.associate = function (models) {
+  animals.associate = function (models) {
     // Define associations here for foreign keys
     //   - No foreign keys defined.
     // See http://docs.sequelizejs.com/en/latest/docs/associations/
@@ -41,7 +41,7 @@ let moduleExports = function (app) {
   };
 
   // !code: sequelize_func_return // !end
-  return teams;
+  return animals;
 };
 // !code: sequelize_more // !end
 

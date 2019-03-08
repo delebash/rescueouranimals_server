@@ -1,5 +1,5 @@
 
-// Hooks for service `teams`. (Can be re-generated.)
+// Hooks for service `animals`. (Can be re-generated.)
 const commonHooks = require('feathers-hooks-common');
 const { authenticate } = require('@feathersjs/authentication').hooks;
 // !code: imports // !end
@@ -8,7 +8,7 @@ const { authenticate } = require('@feathersjs/authentication').hooks;
 // eslint-disable-next-line no-unused-vars
 const { iff } = commonHooks;
 // eslint-disable-next-line no-unused-vars
-const { create, update, patch, validateCreate, validateUpdate, validatePatch } = require('./teams.validate');
+const { create, update, patch, validateCreate, validateUpdate, validatePatch } = require('./animals.validate');
 // !end
 
 // !code: init // !end
