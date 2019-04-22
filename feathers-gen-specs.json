@@ -38,7 +38,18 @@
       "adapter": "sequelize",
       "path": "/animals",
       "isAuthEntity": false,
-      "requiresAuth": true,
+      "requiresAuth": false,
+      "graphql": true
+    },
+    "customers": {
+      "name": "customers",
+      "nameSingular": "customer",
+      "subFolder": "",
+      "fileName": "customers",
+      "adapter": "sequelize",
+      "path": "/customers",
+      "isAuthEntity": false,
+      "requiresAuth": false,
       "graphql": true
     }
   },
@@ -53,7 +64,7 @@
     "sequelize": {
       "database": "mysql",
       "adapter": "sequelize",
-      "connectionString": "mysql://root:test12345@localhost:3306/rescueouranimals"
+      "connectionString": "mysql://root:@localhost:3306/rescueouranimals_server"
     }
   }
 }

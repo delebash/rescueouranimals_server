@@ -19,17 +19,7 @@ let base = merge({},
     description: "Animals database.",
     required: [],
     uniqueItemProperties: [],
-    properties: {
-      id: {
-        type: ID
-      },
-      name: {
-        type: "string"
-      },
-      type: {
-        type: "string"
-      }
-    }
+    properties: {}
   },
   // !end
   // !code: base_more // !end

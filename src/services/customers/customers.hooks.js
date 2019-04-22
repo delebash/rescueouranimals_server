@@ -1,5 +1,5 @@
 
-// Hooks for service `animals`. (Can be re-generated.)
+// Hooks for service `customers`. (Can be re-generated.)
 const commonHooks = require('feathers-hooks-common');
 // !code: imports // !end
 
@@ -7,7 +7,7 @@ const commonHooks = require('feathers-hooks-common');
 // eslint-disable-next-line no-unused-vars
 const { iff } = commonHooks;
 // eslint-disable-next-line no-unused-vars
-const { create, update, patch, validateCreate, validateUpdate, validatePatch } = require('./animals.validate');
+const { create, update, patch, validateCreate, validateUpdate, validatePatch } = require('./customers.validate');
 // !end
 
 // !code: init // !end

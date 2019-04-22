@@ -1,6 +1,7 @@
 
 // Configure the Feathers services. (Can be re-generated.)
 let animals = require('./animals/animals.service');
+let customers = require('./customers/customers.service');
 let users = require('./users/users.service');
 
 // !code: imports // !end
@@ -9,6 +10,7 @@ let users = require('./users/users.service');
 // eslint-disable-next-line no-unused-vars
 let moduleExports = function (app) {
   app.configure(animals);
+  app.configure(customers);
   app.configure(users);
   // !code: func_return // !end
 };

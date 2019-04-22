@@ -22,11 +22,7 @@ let schema = {
 
   // Fields in the model.
   properties: {
-    // !code: schema_properties
-    id: { type: 'ID' },
-    name: {},
-    type: {}
-    // !end
+    // !code: schema_properties // !end
   },
   // !code: schema_more // !end
 };
